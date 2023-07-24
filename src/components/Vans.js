@@ -12,8 +12,7 @@ export default function Vans() {
     const [vansData, setVansData] = useState(null);
     const [loading, setLoading] = useState(true);
     const getData = async () => {
-        const dbSnap=getDocs(collection(db,"BS0nrs2L1yX2JlcUeDgRVKg1xhI2"))
-        .then((response)=>{
+        getDocs(collection(db,"BS0nrs2L1yX2JlcUeDgRVKg1xhI2")).then((response)=>{
             setVansData(response.docs);
             setLoading(false);
         })

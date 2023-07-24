@@ -21,6 +21,7 @@ import Wishlist from './components/Host/Wishlist';
 import Booking from './components/Host/Booking';
 import Cart from './components/Host/Cart';
 import Checkout from './components/Host/Checkout';
+import Availability from './components/Host/Availability';
 
 
 
@@ -51,6 +52,7 @@ function App() {
                 <Route index element={<Details />} />
                 <Route path='pricing' element={<Pricing />} />
                 <Route path='photos' element={<Photos />} />
+                <Route path='availability' element={<Availability />} />
               </Route>
             </Route>
           </Route>

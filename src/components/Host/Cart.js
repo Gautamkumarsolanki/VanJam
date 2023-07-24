@@ -23,6 +23,7 @@ export default function Cart() {
     }
     useEffect(() => {
         getBookingData();
+        // eslint-disable-next-line
     }, [])
     const deleteHandler = async (id) => {
         let newData = { ...bookingData };

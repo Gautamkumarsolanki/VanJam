@@ -1,10 +1,10 @@
-import { getAuth } from 'firebase/auth';
+// import { getAuth } from 'firebase/auth';
 import { doc, getFirestore, updateDoc } from 'firebase/firestore';
 import React, { useState } from 'react'
 import { useOutletContext } from 'react-router-dom'
-import { app } from '../../firebaseconfig';
+// import { app } from '../../firebaseconfig';
 
-const auth=getAuth(app); 
+// const auth=getAuth(app); 
 const db=getFirestore();
 
 export default function Details() {

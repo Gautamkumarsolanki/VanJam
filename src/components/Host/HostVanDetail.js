@@ -21,6 +21,7 @@ export default function HostVanDetail() {
             await getData();
         }
         func();
+        // eslint-disable-next-line
     }, [])
     if (loading) {
         return (
@@ -42,6 +43,7 @@ export default function HostVanDetail() {
                             <NavLink end={true} style={({ isActive }) => { return { textDecoration: isActive ? 'underline' : '', color: isActive ? 'chocolate' : 'black' } }} to={`.`}><p className='hover:underline'>Details</p></NavLink>
                             <NavLink style={({ isActive }) => { return { textDecoration: isActive ? 'underline' : '', color: isActive ? 'chocolate' : 'black' } }} to={`pricing`}><p className='hover:underline'>Pricing</p></NavLink>
                             <NavLink style={({ isActive }) => { return { textDecoration: isActive ? 'underline' : '', color: isActive ? 'chocolate' : 'black' } }} to={`photos`}><p className='hover:underline'>Photos</p></NavLink>
+                            <NavLink style={({ isActive }) => { return { textDecoration: isActive ? 'underline' : '', color: isActive ? 'chocolate' : 'black' } }} to={`availability`}><p className='hover:underline'>Availability</p></NavLink>
                         </div>
                         <div className='mt-16 '>
                             <Outlet context={{ data: vanDetail ,setVanDetail}} />
